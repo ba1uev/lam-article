@@ -1,0 +1,30 @@
+.theme-wired article {
+  background: #f27e96; }
+
+.theme-techcrunch article {
+  background: #39bf66; }
+
+.theme-theverge article {
+  background: #e97e67; }
+
+body {
+  background: #f6f6f6; }
+
+.container {
+  width: 700px;
+  min-height: 400px;
+  position: relative;
+  margin: 60px auto; }
+
+.card {
+  background: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 0px 4px 0px rgba(131, 131, 131, 0.3);
+  border-radius: 2px;
+  padding: 10px; }
+
+figure {
+  margin: 0; }
+  figure img {
+    width: 100%;
+    display: block; }
