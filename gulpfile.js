@@ -5,9 +5,10 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   babel = require('gulp-babel'),
   rigger = require('gulp-rigger'),
-  rimraf = require('gulp-rimraf');
+  rimraf = require('gulp-rimraf'),
   browserSync = require("browser-sync"),
-  reload = browserSync.reload;
+  reload = browserSync.reload,
+  connect = require('gulp-connect');
 
 var path = {
   build: {
@@ -44,7 +45,8 @@ gulp.task('html:build', function () {
   gulp.src(path.src.html)
     .pipe(rigger())
     .pipe(gulp.dest(path.build.html))
-    .pipe(reload({stream: true}));
+    // .pipe(reload({stream: true}));
+    .pipe(connect.reload());
 });
 
 gulp.task('js:build', function () {
@@ -54,7 +56,8 @@ gulp.task('js:build', function () {
       presets: ['es2015']
     }))
     .pipe(gulp.dest(path.build.js))
-    .pipe(reload({stream: true}));
+    // .pipe(reload({stream: true}));
+    .pipe(connect.reload());
 });
 
 gulp.task('style:build', function () {
@@ -64,7 +67,8 @@ gulp.task('style:build', function () {
       browsers: ['last 2 versions']
     }))
     .pipe(gulp.dest(path.build.css))
-    .pipe(reload({stream: true}));
+    // .pipe(reload({stream: true}));
+    .pipe(connect.reload());
 });
 
 gulp.task('build', [
@@ -85,9 +89,22 @@ gulp.task('watch', function(){
   });
 });
 
-gulp.task('webserver', function () {
-  browserSync(config);
+gulp.task('webserver', function() {
+  connect.server({
+    livereload: true,
+    port: 1337,
+    root: ['build'],
+    middleware: function(connect, opt) {
+      return [
+        true
+      ]
+    }
+  });
 });
+
+// gulp.task('webserver', function () {
+//   browserSync(config);
+// });
 
 gulp.task('clean', function (cb) {
   rimraf(path.clean, cb);

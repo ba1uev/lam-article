@@ -1,0 +1,45 @@
+@import "./fonts";
+
+  .theme-theverge {
+  header {
+    h1 {
+      font-family: 'adelle';
+      font-weight: 400;
+    }
+  }
+  article {
+    .article-body {
+      &-part {
+        font-family: 'helvetica';
+        h2 {
+          font-weight: 800;
+          color: #444;
+        }
+        p {
+          font-weight: 300;
+          color: #444;
+          em {
+            font-style: italic;
+          }
+        }
+      }
+      figure {
+        figcaption {
+          font-family: 'helvetica';
+          font-weight: 300;
+          opacity: .6;
+        }
+      }
+      blockquote {
+        font-family: "ff-din-web-condensed";
+        font-weight: 600;
+        font-style: italic;
+        .by {
+          &:before {
+            content: '–';
+          }
+        }
+      }
+    }
+  }
+}

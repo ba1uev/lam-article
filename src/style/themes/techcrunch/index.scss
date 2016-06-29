@@ -1,0 +1,43 @@
+@import "./fonts";
+
+  .theme-techcrunch {
+  header {
+    h1 {
+      font-family: 'alright_sansblack';
+    }
+  }
+  article {
+    .article-body {
+      &-part {
+
+        h2 {
+          font-family: 'alright_sansblack';
+        }
+        p {
+          font-family: 'open sans';
+          font-weight: 400;
+          &:first-letter {
+            font-weight: 700;
+          }
+          em {
+            font-style: italic;
+          }
+        }
+      }
+      figure {
+        figcaption {
+          display: none;
+        }
+      }
+      blockquote {
+        font-family: "open sans";
+        font-style: italic;
+        .by {
+          &:before {
+            content: '–';
+          }
+        }
+      }
+    }
+  }
+}

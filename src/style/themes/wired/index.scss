@@ -1,0 +1,40 @@
+@import "./fonts";
+
+
+.theme-wired {
+  header {
+    h1 {
+      font-family: "ambroise-francois-std";
+    }
+  }
+  article {
+    .article-body {
+      &-part {
+        h2 {
+          font-family: "brandon-text-wired";
+        }
+        p {
+          font-family: 'Exchange SSm 4r';
+          em {
+            font-family: 'Exchange SSm 4i';
+          }
+        }
+      }
+      figure {
+        figcaption {
+          font-family: "proxima-nova";
+          font-style: normal;
+        }
+      }
+      blockquote {
+        font-family: "brandon-text-wired";
+        .by {
+          font-family: "ff-oxide-solid-web";
+          &:before {
+            content: '–';
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,7 @@
-@import "themes/wired.scss";
-@import "themes/techcrunch";
-@import "themes/theverge";
+@import "themes/wired/index";
+@import "themes/techcrunch/index";
+@import "themes/theverge/index";
 
-body {
-  background: #f6f6f6;
-}
 
 .container {
   width: 700px;
@@ -14,17 +11,13 @@ body {
 }
 
 .card {
-  background: #fff;
   margin: 20px 0;
-  box-shadow: 0px 0px 4px 0px rgba(131, 131, 131, 0.3);
-  border-radius: 2px;
+  border: 1px solid #000;
   padding: 10px;
 }
 
 .controlls {
-}
-
-article {
+  margin-bottom: 40px;
 }
 
 figure {

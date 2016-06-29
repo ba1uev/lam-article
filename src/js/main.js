@@ -12,8 +12,10 @@ let state = {
 
 
 THEMES.onchange = function() {
-  console.log('Theme: ', this.value);
-  addClass(CONTENT, `theme-${this.value}`);
+  let value = this.value;
+  removeClass(CONTENT, `theme-${state.theme}`)
+  addClass(CONTENT, `theme-${value}`);
+  state.theme = value;
 }
 
 let prev = null;
