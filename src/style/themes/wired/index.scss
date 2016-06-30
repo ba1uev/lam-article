@@ -4,6 +4,10 @@
 .theme-wired {
   width: 582px;
 
+  ::selection {
+    background: #b4e7f8;
+  }
+
   figure {
     img {
       width: 100%;

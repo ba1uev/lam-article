@@ -54,6 +54,10 @@
 
 .theme-wired {
   width: 582px; }
+  .theme-wired ::-moz-selection {
+    background: #b4e7f8; }
+  .theme-wired ::selection {
+    background: #b4e7f8; }
   .theme-wired figure img {
     width: 100%; }
   .theme-wired figure figcaption {
