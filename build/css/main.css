@@ -149,28 +149,86 @@
   font-weight: 400;
   font-style: normal; }
 
-.theme-techcrunch header h1 {
-  font-family: 'alright_sansblack'; }
-
-.theme-techcrunch article .article-body-part h2 {
-  font-family: 'alright_sansblack'; }
-
-.theme-techcrunch article .article-body-part p {
-  font-family: 'open sans';
-  font-weight: 400; }
-  .theme-techcrunch article .article-body-part p:first-letter {
-    font-weight: 700; }
-  .theme-techcrunch article .article-body-part p em {
-    font-style: italic; }
-
-.theme-techcrunch article .article-body figure figcaption {
-  display: none; }
-
-.theme-techcrunch article .article-body blockquote {
-  font-family: "open sans";
-  font-style: italic; }
-  .theme-techcrunch article .article-body blockquote .by:before {
-    content: '–'; }
+.theme-techcrunch {
+  width: 674px; }
+  .theme-techcrunch figure {
+    width: 100%;
+    margin: 0; }
+    .theme-techcrunch figure img {
+      width: 100%; }
+    .theme-techcrunch figure figcaption {
+      display: none; }
+  .theme-techcrunch header h1 {
+    font-family: 'alright_sansblack';
+    color: #3e433e;
+    font-size: 39px;
+    line-height: 47px;
+    margin-bottom: 16px; }
+  .theme-techcrunch article .article-body {
+    margin-bottom: 100px; }
+    .theme-techcrunch article .article-body-part {
+      color: #3e433e; }
+      .theme-techcrunch article .article-body-part h2 {
+        font-family: 'alright_sansblack';
+        margin: 46px 0 23px;
+        font-size: 23px; }
+      .theme-techcrunch article .article-body-part p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 16px;
+        font-family: 'open sans';
+        font-weight: 400; }
+        .theme-techcrunch article .article-body-part p.first {
+          font-size: 1.4em;
+          line-height: 1.6;
+          margin-top: 20px;
+          margin-bottom: 23px; }
+          .theme-techcrunch article .article-body-part p.first:first-letter {
+            color: #089E00;
+            font-family: 'alright_sansblack';
+            font-weight: 700;
+            font-size: 6rem;
+            line-height: 4rem;
+            float: left;
+            padding-right: .5rem; }
+        .theme-techcrunch article .article-body-part p em {
+          font-style: italic; }
+        .theme-techcrunch article .article-body-part p a {
+          box-sizing: border-box;
+          color: #089E00; }
+          .theme-techcrunch article .article-body-part p a:hover {
+            text-decoration: underline; }
+      .theme-techcrunch article .article-body-part blockquote {
+        display: block;
+        width: 306px;
+        font-size: 26px;
+        line-height: 31px;
+        font-family: "open sans";
+        font-style: italic; }
+        .theme-techcrunch article .article-body-part blockquote.quote_left {
+          float: left;
+          margin: 16px 16px 16px 0;
+          padding: 16px 16px 16px 0; }
+        .theme-techcrunch article .article-body-part blockquote.quote_right {
+          float: right;
+          margin: 16px 0 16px 16px;
+          padding: 16px 0 16px 16px; }
+        .theme-techcrunch article .article-body-part blockquote .quote-body:before {
+          content: '“'; }
+        .theme-techcrunch article .article-body-part blockquote .quote-body:after {
+          content: '”'; }
+        .theme-techcrunch article .article-body-part blockquote .quote-body:before, .theme-techcrunch article .article-body-part blockquote .quote-body:after {
+          font-weight: bold;
+          speak: none;
+          font-weight: bold;
+          margin: 4px;
+          color: #089E00; }
+        .theme-techcrunch article .article-body-part blockquote .by {
+          display: none; }
+          .theme-techcrunch article .article-body-part blockquote .by:before {
+            content: '–'; }
+    .theme-techcrunch article .article-body figure {
+      margin-bottom: 16px; }
 
 @font-face {
   font-family: "adelle";
@@ -282,20 +340,21 @@
       opacity: 0.6;
       font-size: 13px; }
 
-.container {
-  width: 700px;
-  min-height: 400px;
-  position: relative;
-  margin: 60px; }
-
-.card {
-  margin: 20px 0;
-  background: #f9dd22;
-  padding: 10px;
-  font-family: courier; }
+.content {
+  margin: 140px auto; }
 
 .controlls {
-  margin-bottom: 40px; }
+  font-family: courier;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(131, 131, 131, 0.3);
+  box-sizing: border-box;
+  padding: 10px; }
 
 a {
   text-decoration: none;

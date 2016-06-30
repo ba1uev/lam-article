@@ -21,7 +21,7 @@ var themesMap = {
 };
 
 var state = {
-  theme: 'theverge',
+  theme: 'wired',
   device: 'desktop'
 };
 

@@ -21,7 +21,7 @@ let themesMap = {
 }
 
 let state = {
-  theme: 'theverge',
+  theme: 'wired',
   device: 'desktop'
 }
 
