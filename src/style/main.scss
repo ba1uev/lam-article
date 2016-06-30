@@ -7,23 +7,29 @@
   width: 700px;
   min-height: 400px;
   position: relative;
-  margin: 60px auto;
+  margin: 60px;
 }
 
 .card {
   margin: 20px 0;
-  border: 1px solid #000;
+  background: #f9dd22;
   padding: 10px;
+  font-family: courier;
 }
 
 .controlls {
   margin-bottom: 40px;
 }
 
-figure {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
   margin: 0;
-  img {
-    width: 100%;
-    display: block;
-  }
+}
+
+blockquote {
+  margin: 0;
 }

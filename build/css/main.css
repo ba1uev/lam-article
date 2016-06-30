@@ -52,27 +52,70 @@
   font-weight: normal;
   font-style: normal; }
 
-.theme-wired header h1 {
-  font-family: "ambroise-francois-std"; }
-
-.theme-wired article .article-body-part h2 {
-  font-family: "brandon-text-wired"; }
-
-.theme-wired article .article-body-part p {
-  font-family: 'Exchange SSm 4r'; }
-  .theme-wired article .article-body-part p em {
-    font-family: 'Exchange SSm 4i'; }
-
-.theme-wired article .article-body figure figcaption {
-  font-family: "proxima-nova";
-  font-style: normal; }
-
-.theme-wired article .article-body blockquote {
-  font-family: "brandon-text-wired"; }
-  .theme-wired article .article-body blockquote .by {
-    font-family: "ff-oxide-solid-web"; }
-    .theme-wired article .article-body blockquote .by:before {
-      content: '–'; }
+.theme-wired {
+  width: 582px; }
+  .theme-wired figure img {
+    width: 100%; }
+  .theme-wired figure figcaption {
+    font-family: "proxima-nova";
+    font-weight: 400;
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    font-style: normal; }
+  .theme-wired header {
+    margin-bottom: 50px; }
+    .theme-wired header h1 {
+      font-family: "ambroise-francois-std";
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 55px;
+      margin-bottom: 50px;
+      text-transform: uppercase; }
+    .theme-wired header figure {
+      width: 100%;
+      margin: 0; }
+  .theme-wired article .article-body {
+    margin-bottom: 100px; }
+    .theme-wired article .article-body-part {
+      width: 532px;
+      margin-left: 50px; }
+      .theme-wired article .article-body-part h2 {
+        font-family: "brandon-text-wired";
+        font-size: 24px;
+        margin: 50px 0 8px; }
+      .theme-wired article .article-body-part p {
+        font-family: 'Exchange SSm 4r';
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 14px; }
+        .theme-wired article .article-body-part p em {
+          font-family: 'Exchange SSm 4i'; }
+        .theme-wired article .article-body-part p a {
+          border-bottom: 3px solid #b4e7f8;
+          box-shadow: inset 0 -4px 0 #b4e7f8;
+          transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
+          .theme-wired article .article-body-part p a:hover {
+            background: #b4e7f8; }
+      .theme-wired article .article-body-part blockquote {
+        display: block;
+        float: left;
+        width: 300px;
+        border-top: 9px solid #000;
+        padding: 16px 0;
+        margin: 50px 50px 50px -50px;
+        border-bottom: 1px solid #ccc;
+        font-family: "brandon-text-wired"; }
+        .theme-wired article .article-body-part blockquote .by {
+          margin-top: 16px;
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 10px;
+          font-family: "ff-oxide-solid-web"; }
+          .theme-wired article .article-body-part blockquote .by:before {
+            content: '–'; }
+    .theme-wired article .article-body figure {
+      width: 532px;
+      margin: 64px 0 64px 50px; }
 
 @font-face {
   font-family: "Open Sans";
@@ -171,49 +214,95 @@
   font-style: normal;
   font-weight: 700; }
 
-.theme-theverge header h1 {
-  font-family: 'adelle';
-  font-weight: 400; }
-
-.theme-theverge article .article-body-part {
-  font-family: 'helvetica'; }
-  .theme-theverge article .article-body-part h2 {
-    font-weight: 800;
-    color: #444; }
-  .theme-theverge article .article-body-part p {
-    font-weight: 300;
-    color: #444; }
-    .theme-theverge article .article-body-part p em {
-      font-style: italic; }
-
-.theme-theverge article .article-body figure figcaption {
-  font-family: 'helvetica';
-  font-weight: 300;
-  opacity: .6; }
-
-.theme-theverge article .article-body blockquote {
-  font-family: "ff-din-web-condensed";
-  font-weight: 600;
-  font-style: italic; }
-  .theme-theverge article .article-body blockquote .by:before {
-    content: '–'; }
+.theme-theverge {
+  width: 1020px; }
+  .theme-theverge figure {
+    width: 100%;
+    margin: 0; }
+    .theme-theverge figure img {
+      width: 100%; }
+    .theme-theverge figure figcaption {
+      font-family: 'helvetica'; }
+  .theme-theverge header h1 {
+    font-family: 'adelle';
+    font-weight: 400;
+    font-size: 49px;
+    padding-right: 60px;
+    margin-bottom: 40px; }
+  .theme-theverge header figure figcaption {
+    display: none; }
+  .theme-theverge article .article-body {
+    margin-bottom: 100px; }
+    .theme-theverge article .article-body-part {
+      font-family: 'helvetica';
+      width: 662px;
+      margin: 45px auto 30px;
+      color: #444; }
+      .theme-theverge article .article-body-part h2 {
+        font-weight: 800;
+        font-size: 16px;
+        margin: 17px 0; }
+      .theme-theverge article .article-body-part p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 17px 0; }
+        .theme-theverge article .article-body-part p em {
+          font-style: italic; }
+        .theme-theverge article .article-body-part p a {
+          box-sizing: border-box;
+          color: #fa4b2a; }
+          .theme-theverge article .article-body-part p a:hover {
+            text-decoration: underline; }
+      .theme-theverge article .article-body-part blockquote {
+        display: block;
+        float: left;
+        width: 320px;
+        padding-top: 7px;
+        color: #fa4b2a;
+        text-transform: uppercase;
+        font-size: 45px;
+        line-height: 45px;
+        font-family: "ff-din-web-condensed";
+        font-weight: 600;
+        font-style: italic; }
+        .theme-theverge article .article-body-part blockquote.quote_left {
+          float: left;
+          margin: 15px 15px 15px -90px; }
+        .theme-theverge article .article-body-part blockquote.quote_right {
+          float: right;
+          margin: 15px -90px 15px 15px; }
+        .theme-theverge article .article-body-part blockquote .quote-body:before, .theme-theverge article .article-body-part blockquote .quote-body:after {
+          content: '"'; }
+        .theme-theverge article .article-body-part blockquote .by {
+          display: none; }
+          .theme-theverge article .article-body-part blockquote .by:before {
+            content: '–'; }
+    .theme-theverge article .article-body figure figcaption {
+      opacity: 0.6;
+      font-size: 13px; }
 
 .container {
   width: 700px;
   min-height: 400px;
   position: relative;
-  margin: 60px auto; }
+  margin: 60px; }
 
 .card {
   margin: 20px 0;
-  border: 1px solid #000;
-  padding: 10px; }
+  background: #f9dd22;
+  padding: 10px;
+  font-family: courier; }
 
 .controlls {
   margin-bottom: 40px; }
 
-figure {
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p {
   margin: 0; }
-  figure img {
-    width: 100%;
-    display: block; }
+
+blockquote {
+  margin: 0; }

@@ -5,16 +5,36 @@ var THEMES = CONTROLLS.theme;
 var DEVICES = CONTROLLS.device;
 var CONTENT = document.querySelector('.content');
 
+var themesMap = {
+  wired: {
+    index: 0,
+    theme: 'theme-wired'
+  },
+  techcrunch: {
+    index: 1,
+    theme: 'theme-techcrunch'
+  },
+  theverge: {
+    index: 2,
+    theme: 'theme-theverge'
+  }
+};
+
 var state = {
-  theme: 'wired',
+  theme: 'theverge',
   device: 'desktop'
 };
 
+//  INIT ----------------------------------
+console.log(THEMES.options[themesMap[state.theme].index]);
+THEMES.options[themesMap[state.theme].index].selected = true;
+addClass(CONTENT, themesMap[state.theme].theme);
+// ----------------------------------------
+
 THEMES.onchange = function () {
-  var value = this.value;
-  removeClass(CONTENT, 'theme-' + state.theme);
-  addClass(CONTENT, 'theme-' + value);
-  state.theme = value;
+  removeClass(CONTENT, themesMap[state.theme].theme);
+  state.theme = this.value;
+  addClass(CONTENT, themesMap[state.theme].theme);
 };
 
 var prev = null;

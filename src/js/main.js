@@ -5,17 +5,36 @@ const THEMES = CONTROLLS.theme;
 const DEVICES = CONTROLLS.device;
 const CONTENT = document.querySelector('.content');
 
+let themesMap = {
+  wired: {
+    index: 0,
+    theme: 'theme-wired'
+  },
+  techcrunch: {
+    index: 1,
+    theme: 'theme-techcrunch'
+  },
+  theverge: {
+    index: 2,
+    theme: 'theme-theverge'
+  }
+}
+
 let state = {
-  theme: 'wired',
+  theme: 'theverge',
   device: 'desktop'
 }
 
+//  INIT ----------------------------------
+console.log(THEMES.options[themesMap[state.theme].index]);
+THEMES.options[themesMap[state.theme].index].selected = true;
+addClass(CONTENT, themesMap[state.theme].theme);
+// ----------------------------------------
 
 THEMES.onchange = function() {
-  let value = this.value;
-  removeClass(CONTENT, `theme-${state.theme}`)
-  addClass(CONTENT, `theme-${value}`);
-  state.theme = value;
+  removeClass(CONTENT, themesMap[state.theme].theme);
+  state.theme = this.value;
+  addClass(CONTENT, themesMap[state.theme].theme);
 }
 
 let prev = null;
