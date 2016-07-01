@@ -538,7 +538,7 @@ body {
   margin: auto;
   position: relative; }
 
-.controlls {
+.controls {
   font-family: 'helvetica';
   width: 100%;
   height: 40px;
@@ -564,3 +564,12 @@ blockquote {
 @media screen and (max-width: 1200px) {
   .device-view.device-desktop {
     width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .controls span.controls-theme {
+    text-align: right;
+    float: right; }
+  .controls span.controls-device {
+    display: none;
+    text-align: center;
+    margin: 10px auto 0; } }

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="https://40.media.tumblr.com/6278322f66d922972b2c0e18f2a6a84f/tumblr_n9efcjog0l1tc0epgo1_r2_1280.png">
     <title>LAM Article</title>
     <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
@@ -62,21 +62,25 @@
         </article>
       </div>
     </div>
-    <div class="controlls card">
+    <div class="controls card">
       <form name="form">
         <!-- <b>Theme:</b> -->
-        <select name="theme">
-          <option value="wired">Wired</option>
-          <option value="techcrunch">TechCrunch</option>
-          <option value="theverge">The Verge</option>
-        </select>
+        <span class="controls-theme">
+          <select name="theme">
+            <option value="wired">Wired</option>
+            <option value="techcrunch">TechCrunch</option>
+            <option value="theverge">The Verge</option>
+          </select>
+        </span>
         &nbsp;&nbsp;&nbsp;
         <!-- <b>Device view:</b> -->
-        <label><input type="radio" name="device" value="desktop" checked> Desktop</label>
-        &nbsp;
-        <label><input type="radio" name="device" value="tablet" >Tablet</label>
-        &nbsp;
-        <label><input type="radio" name="device" value="mobile" >Mobile</label>
+        <span class="controls-device">
+          <label><input type="radio" name="device" value="desktop" checked> Desktop</label>
+          &nbsp;
+          <label><input type="radio" name="device" value="tablet" >Tablet</label>
+          &nbsp;
+          <label><input type="radio" name="device" value="mobile" >Mobile</label>
+        </span>
       </form>
     </div>
     <script src="js/main.js"></script>
