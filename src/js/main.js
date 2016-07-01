@@ -38,6 +38,12 @@ addClass(DEVICE_VIEW, deviceMap[state.device]);
 THEMES.options[themesMap[state.theme].index].selected = true;
 addClass(CONTENT, themesMap[state.theme].selector);
 
+window.onresize = function(e){
+  removeClass(DEVICE_VIEW, deviceMap[state.device]);
+  addClass(DEVICE_VIEW, deviceMap['desktop']);
+  DEVICES[0].checked = true;
+}
+
 // ----------------------------------------
 
 THEMES.onchange = function() {

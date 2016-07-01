@@ -1,59 +1,65 @@
 @media screen and (max-width: 768px) {
-  .theme-wired {
-    width: 100%;
-    header {
-      margin: 0 16px 40px;
-    }
-    article {
-      margin: 0 16px;
-      .article-body {
-        &-part {
-          width: 100%;
-          margin: 0;
-          blockquote {
+  .device-view {
+    .theme-wired {
+      width: 100%;
+      header {
+        margin: 0 16px 40px;
+      }
+      article {
+        margin: 0 16px;
+        .article-body {
+          &-part {
+            width: 100%;
+            margin: 0;
+            blockquote {
+              margin-left: 0;
+            }
+          }
+          figure {
+            width: 100%;
             margin-left: 0;
           }
         }
-        figure {
-          width: 100%;
-          margin-left: 0;
-        }
       }
     }
   }
 }
 
 @media screen and (max-width: 630px) {
-  .theme-wired {
-    header {
-      h1 {
-        font-size: 45px;
-        line-height: 38px;
-        margin-bottom: 30px;
+  .device-view {
+    .theme-wired {
+      header {
+        h1 {
+          font-size: 45px;
+          line-height: 38px;
+          margin-bottom: 30px;
+        }
       }
-    }
-    article {
-      .article-body {
-        &-part {
-          blockquote {
-            display: none;
+      article {
+        .article-body {
+          &-part {
+            blockquote {
+              display: none;
+            }
+          }
+          figure {
+            margin: 40px 0;
           }
         }
-        figure {
-          margin: 40px 0;
-        }
       }
     }
   }
 }
 
 @media screen and (max-width: 630px) {
-  .theme-wired {
-    article {
-      .article-body {
-        &-part {
-          p {
-            font-size: 16px;
+  .device-view {
+    .theme-wired {
+      article {
+        .article-body {
+          &-part {
+            p {
+              font-size: 16px;
+            }
           }
         }
       }
