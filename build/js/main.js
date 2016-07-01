@@ -1,12 +1,13 @@
 'use strict';
 
-var CONTROLLS = document.forms[0];
-var THEMES = CONTROLLS.theme;
-var DEVICES = CONTROLLS.device;
+var controls = document.forms[0];
+var themeSelect = controls.theme;
+var deviceRadios = controls.device;
+
 var DEVICE_VIEW = document.querySelector('.device-view');
 var CONTENT = document.querySelector('.content');
 
-var themesMap = {
+var THEMES = {
   wired: {
     index: 0,
     selector: 'theme-wired'
@@ -21,7 +22,7 @@ var themesMap = {
   }
 };
 
-var deviceMap = {
+var DEVICES = {
   desktop: 'device-desktop',
   tablet: 'device-tablet',
   mobile: 'device-mobile'
@@ -32,42 +33,37 @@ var state = {
   device: 'desktop'
 };
 
-//  INIT ----------------------------------
-
-addClass(DEVICE_VIEW, deviceMap[state.device]);
-THEMES.options[themesMap[state.theme].index].selected = true;
-addClass(CONTENT, themesMap[state.theme].selector);
+// init
+addClass(DEVICE_VIEW, DEVICES[state.device]);
+themeSelect.options[THEMES[state.theme].index].selected = true;
+addClass(CONTENT, THEMES[state.theme].selector);
 
 window.onresize = function (e) {
-  removeClass(DEVICE_VIEW, deviceMap[state.device]);
-  addClass(DEVICE_VIEW, deviceMap['desktop']);
-  DEVICES[0].checked = true;
+  removeClass(DEVICE_VIEW, DEVICES[state.device]);
+  addClass(DEVICE_VIEW, DEVICES['desktop']);
+  deviceRadios[0].checked = true;
 };
 
-// ----------------------------------------
-
-THEMES.onchange = function () {
-  removeClass(CONTENT, themesMap[state.theme].selector);
+// actions
+themeSelect.onchange = function () {
+  removeClass(CONTENT, THEMES[state.theme].selector);
   state.theme = this.value;
-  addClass(CONTENT, themesMap[state.theme].selector);
+  addClass(CONTENT, THEMES[state.theme].selector);
 };
 
 var prev = null;
-for (var i = 0; i < DEVICES.length; i++) {
-  DEVICES[i].onclick = function () {
+for (var i = 0; i < deviceRadios.length; i++) {
+  deviceRadios[i].onclick = function () {
     if (this !== prev) {
       prev = this;
     }
-    removeClass(DEVICE_VIEW, deviceMap[state.device]);
+    removeClass(DEVICE_VIEW, DEVICES[state.device]);
     state.device = this.value;
-    addClass(DEVICE_VIEW, deviceMap[state.device]);
+    addClass(DEVICE_VIEW, DEVICES[state.device]);
   };
 }
 
-// ----------------------------------------
-
-// UTILS
-
+// utils
 function addEvent(elem, evType, fn) {
   if (elem.addEventListener) {
     elem.addEventListener(evType, fn, false);
