@@ -52,56 +52,56 @@
   font-weight: normal;
   font-style: normal; }
 
-.theme-wired {
+.device-view .theme-wired {
   width: 582px; }
-  .theme-wired ::-moz-selection {
+  .device-view .theme-wired ::-moz-selection {
     background: #b4e7f8; }
-  .theme-wired ::selection {
+  .device-view .theme-wired ::selection {
     background: #b4e7f8; }
-  .theme-wired figure img {
+  .device-view .theme-wired figure img {
     width: 100%; }
-  .theme-wired figure figcaption {
+  .device-view .theme-wired figure figcaption {
     font-family: "proxima-nova";
     font-weight: 400;
     margin-top: 16px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
     font-style: normal; }
-  .theme-wired header {
+  .device-view .theme-wired header {
     margin-bottom: 50px; }
-    .theme-wired header h1 {
+    .device-view .theme-wired header h1 {
       font-family: "ambroise-francois-std";
       font-weight: normal;
       font-size: 64px;
       line-height: 55px;
       margin-bottom: 50px;
       text-transform: uppercase; }
-    .theme-wired header figure {
+    .device-view .theme-wired header figure {
       width: 100%;
       margin: 0; }
-  .theme-wired article .article-body {
+  .device-view .theme-wired article .article-body {
     margin-bottom: 100px; }
-    .theme-wired article .article-body-part {
+    .device-view .theme-wired article .article-body-part {
       width: 532px;
       margin-left: 50px; }
-      .theme-wired article .article-body-part h2 {
+      .device-view .theme-wired article .article-body-part h2 {
         font-family: "brandon-text-wired";
         font-size: 24px;
         margin: 50px 0 8px; }
-      .theme-wired article .article-body-part p {
+      .device-view .theme-wired article .article-body-part p {
         font-family: 'Exchange SSm 4r';
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 14px; }
-        .theme-wired article .article-body-part p em {
+        .device-view .theme-wired article .article-body-part p em {
           font-family: 'Exchange SSm 4i'; }
-        .theme-wired article .article-body-part p a {
+        .device-view .theme-wired article .article-body-part p a {
           border-bottom: 3px solid #b4e7f8;
           box-shadow: inset 0 -4px 0 #b4e7f8;
           transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1); }
-          .theme-wired article .article-body-part p a:hover {
+          .device-view .theme-wired article .article-body-part p a:hover {
             background: #b4e7f8; }
-      .theme-wired article .article-body-part blockquote {
+      .device-view .theme-wired article .article-body-part blockquote {
         display: block;
         float: left;
         width: 300px;
@@ -110,37 +110,38 @@
         margin: 50px 50px 50px -50px;
         border-bottom: 1px solid #ccc;
         font-family: "brandon-text-wired"; }
-        .theme-wired article .article-body-part blockquote .by {
+        .device-view .theme-wired article .article-body-part blockquote .by {
           margin-top: 16px;
           color: rgba(0, 0, 0, 0.6);
           font-size: 10px;
           font-family: "ff-oxide-solid-web"; }
-          .theme-wired article .article-body-part blockquote .by:before {
+          .device-view .theme-wired article .article-body-part blockquote .by:before {
             content: '–'; }
-    .theme-wired article .article-body figure {
+    .device-view .theme-wired article .article-body figure {
       width: 532px;
       margin: 64px 0 64px 50px; }
-  .theme-wired.device-mobile {
-    width: 320px; }
-    .theme-wired.device-mobile header {
-      margin: 0 16px 40px; }
-      .theme-wired.device-mobile header h1 {
-        font-size: 45px;
-        line-height: 38px;
-        margin-bottom: 30px; }
-    .theme-wired.device-mobile article {
-      margin: 0 16px; }
-      .theme-wired.device-mobile article .article-body-part {
-        width: 100%;
-        margin: 0; }
-        .theme-wired.device-mobile article .article-body-part p {
-          font-size: 16px; }
-        .theme-wired.device-mobile article .article-body-part blockquote {
-          margin-left: 0;
-          display: none; }
-      .theme-wired.device-mobile article .article-body figure {
-        width: 100%;
-        margin: 40px 0; }
+
+.device-view.device-mobile .theme-wired {
+  width: 320px; }
+  .device-view.device-mobile .theme-wired header {
+    margin: 0 16px 40px; }
+    .device-view.device-mobile .theme-wired header h1 {
+      font-size: 45px;
+      line-height: 38px;
+      margin-bottom: 30px; }
+  .device-view.device-mobile .theme-wired article {
+    margin: 0 16px; }
+    .device-view.device-mobile .theme-wired article .article-body-part {
+      width: 100%;
+      margin: 0; }
+      .device-view.device-mobile .theme-wired article .article-body-part p {
+        font-size: 16px; }
+      .device-view.device-mobile .theme-wired article .article-body-part blockquote {
+        margin-left: 0;
+        display: none; }
+    .device-view.device-mobile .theme-wired article .article-body figure {
+      width: 100%;
+      margin: 40px 0; }
 
 @media screen and (max-width: 768px) {
   .theme-wired {
@@ -204,41 +205,41 @@
   font-weight: 400;
   font-style: normal; }
 
-.theme-techcrunch {
+.device-view .theme-techcrunch {
   width: 674px; }
-  .theme-techcrunch figure {
+  .device-view .theme-techcrunch figure {
     width: 100%;
     margin: 0; }
-    .theme-techcrunch figure img {
+    .device-view .theme-techcrunch figure img {
       width: 100%; }
-    .theme-techcrunch figure figcaption {
+    .device-view .theme-techcrunch figure figcaption {
       display: none; }
-  .theme-techcrunch header h1 {
+  .device-view .theme-techcrunch header h1 {
     font-family: 'alright_sansblack';
     color: #3e433e;
     font-size: 39px;
     line-height: 47px;
     margin-bottom: 16px; }
-  .theme-techcrunch article .article-body {
+  .device-view .theme-techcrunch article .article-body {
     margin-bottom: 100px; }
-    .theme-techcrunch article .article-body-part {
+    .device-view .theme-techcrunch article .article-body-part {
       color: #3e433e; }
-      .theme-techcrunch article .article-body-part h2 {
+      .device-view .theme-techcrunch article .article-body-part h2 {
         font-family: 'alright_sansblack';
         margin: 46px 0 23px;
         font-size: 23px; }
-      .theme-techcrunch article .article-body-part p {
+      .device-view .theme-techcrunch article .article-body-part p {
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 16px;
         font-family: 'open sans';
         font-weight: 400; }
-        .theme-techcrunch article .article-body-part p.first {
+        .device-view .theme-techcrunch article .article-body-part p.first {
           font-size: 1.4em;
           line-height: 1.6;
           margin-top: 20px;
           margin-bottom: 23px; }
-          .theme-techcrunch article .article-body-part p.first:first-letter {
+          .device-view .theme-techcrunch article .article-body-part p.first:first-letter {
             color: #089E00;
             font-family: 'alright_sansblack';
             font-weight: 700;
@@ -246,62 +247,63 @@
             line-height: 4rem;
             float: left;
             padding-right: .5rem; }
-        .theme-techcrunch article .article-body-part p em {
+        .device-view .theme-techcrunch article .article-body-part p em {
           font-style: italic; }
-        .theme-techcrunch article .article-body-part p a {
+        .device-view .theme-techcrunch article .article-body-part p a {
           box-sizing: border-box;
           color: #089E00; }
-          .theme-techcrunch article .article-body-part p a:hover {
+          .device-view .theme-techcrunch article .article-body-part p a:hover {
             text-decoration: underline; }
-      .theme-techcrunch article .article-body-part blockquote {
+      .device-view .theme-techcrunch article .article-body-part blockquote {
         display: block;
         width: 306px;
         font-size: 26px;
         line-height: 31px;
         font-family: "open sans";
         font-style: italic; }
-        .theme-techcrunch article .article-body-part blockquote.quote_left {
+        .device-view .theme-techcrunch article .article-body-part blockquote.quote_left {
           float: left;
           margin: 16px 16px 16px 0;
           padding: 16px 16px 16px 0; }
-        .theme-techcrunch article .article-body-part blockquote.quote_right {
+        .device-view .theme-techcrunch article .article-body-part blockquote.quote_right {
           float: right;
           margin: 16px 0 16px 16px;
           padding: 16px 0 16px 16px; }
-        .theme-techcrunch article .article-body-part blockquote .quote-body:before {
+        .device-view .theme-techcrunch article .article-body-part blockquote .quote-body:before {
           content: '“'; }
-        .theme-techcrunch article .article-body-part blockquote .quote-body:after {
+        .device-view .theme-techcrunch article .article-body-part blockquote .quote-body:after {
           content: '”'; }
-        .theme-techcrunch article .article-body-part blockquote .quote-body:before, .theme-techcrunch article .article-body-part blockquote .quote-body:after {
+        .device-view .theme-techcrunch article .article-body-part blockquote .quote-body:before, .device-view .theme-techcrunch article .article-body-part blockquote .quote-body:after {
           font-weight: bold;
           speak: none;
           font-weight: bold;
           margin: 4px;
           color: #089E00; }
-        .theme-techcrunch article .article-body-part blockquote .by {
+        .device-view .theme-techcrunch article .article-body-part blockquote .by {
           display: none; }
-          .theme-techcrunch article .article-body-part blockquote .by:before {
+          .device-view .theme-techcrunch article .article-body-part blockquote .by:before {
             content: '–'; }
-    .theme-techcrunch article .article-body figure {
+    .device-view .theme-techcrunch article .article-body figure {
       margin-bottom: 16px; }
-  .theme-techcrunch.device-mobile {
-    width: 320px; }
-    .theme-techcrunch.device-mobile header {
-      margin: 0 16px; }
-      .theme-techcrunch.device-mobile header h1 {
-        font-size: 21px;
-        line-height: 27px; }
-    .theme-techcrunch.device-mobile article {
-      margin: 0 16px; }
-      .theme-techcrunch.device-mobile article .article-body-part p.first {
-        font-size: 1.2em; }
-      .theme-techcrunch.device-mobile article .article-body-part blockquote {
-        width: auto;
-        float: none; }
-        .theme-techcrunch.device-mobile article .article-body-part blockquote.quote_left {
-          margin: 16px 0; }
-        .theme-techcrunch.device-mobile article .article-body-part blockquote.quote_right {
-          margin: 16px 0; }
+
+.device-view.device-mobile .theme-techcrunch {
+  width: 320px; }
+  .device-view.device-mobile .theme-techcrunch header {
+    margin: 0 16px; }
+    .device-view.device-mobile .theme-techcrunch header h1 {
+      font-size: 21px;
+      line-height: 27px; }
+  .device-view.device-mobile .theme-techcrunch article {
+    margin: 0 16px; }
+    .device-view.device-mobile .theme-techcrunch article .article-body-part p.first {
+      font-size: 1.2em; }
+    .device-view.device-mobile .theme-techcrunch article .article-body-part blockquote {
+      width: auto;
+      float: none; }
+      .device-view.device-mobile .theme-techcrunch article .article-body-part blockquote.quote_left {
+        margin: 16px 0; }
+      .device-view.device-mobile .theme-techcrunch article .article-body-part blockquote.quote_right {
+        margin: 16px 0; }
 
 @media screen and (max-width: 700px) {
   .theme-techcrunch {
@@ -376,47 +378,47 @@
   font-style: normal;
   font-weight: 700; }
 
-.theme-theverge {
+.device-view .theme-theverge {
   width: 1020px; }
-  .theme-theverge figure {
+  .device-view .theme-theverge figure {
     width: 100%;
     margin: 0; }
-    .theme-theverge figure img {
+    .device-view .theme-theverge figure img {
       width: 100%; }
-    .theme-theverge figure figcaption {
+    .device-view .theme-theverge figure figcaption {
       font-family: 'helvetica'; }
-  .theme-theverge header h1 {
+  .device-view .theme-theverge header h1 {
     font-family: 'adelle';
     font-weight: 400;
     font-size: 49px;
     padding-left: 16px;
     margin-bottom: 40px; }
-  .theme-theverge header figure figcaption {
+  .device-view .theme-theverge header figure figcaption {
     display: none; }
-  .theme-theverge article .article-body {
+  .device-view .theme-theverge article .article-body {
     margin-bottom: 100px; }
-    .theme-theverge article .article-body-part {
+    .device-view .theme-theverge article .article-body-part {
       font-family: 'helvetica';
       width: 662px;
       margin: 45px auto 30px;
       color: #444; }
-      .theme-theverge article .article-body-part h2 {
+      .device-view .theme-theverge article .article-body-part h2 {
         font-weight: 800;
         font-size: 16px;
         margin: 17px 0; }
-      .theme-theverge article .article-body-part p {
+      .device-view .theme-theverge article .article-body-part p {
         font-weight: 300;
         font-size: 16px;
         line-height: 23px;
         margin: 17px 0; }
-        .theme-theverge article .article-body-part p em {
+        .device-view .theme-theverge article .article-body-part p em {
           font-style: italic; }
-        .theme-theverge article .article-body-part p a {
+        .device-view .theme-theverge article .article-body-part p a {
           box-sizing: border-box;
           color: #fa4b2a; }
-          .theme-theverge article .article-body-part p a:hover {
+          .device-view .theme-theverge article .article-body-part p a:hover {
             text-decoration: underline; }
-      .theme-theverge article .article-body-part blockquote {
+      .device-view .theme-theverge article .article-body-part blockquote {
         display: block;
         float: left;
         width: 320px;
@@ -428,55 +430,57 @@
         font-family: "ff-din-web-condensed";
         font-weight: 600;
         font-style: italic; }
-        .theme-theverge article .article-body-part blockquote.quote_left {
+        .device-view .theme-theverge article .article-body-part blockquote.quote_left {
           float: left;
           margin: 15px 15px 15px -90px; }
-        .theme-theverge article .article-body-part blockquote.quote_right {
+        .device-view .theme-theverge article .article-body-part blockquote.quote_right {
           float: right;
           margin: 15px -90px 15px 15px; }
-        .theme-theverge article .article-body-part blockquote .quote-body:before, .theme-theverge article .article-body-part blockquote .quote-body:after {
+        .device-view .theme-theverge article .article-body-part blockquote .quote-body:before, .device-view .theme-theverge article .article-body-part blockquote .quote-body:after {
           content: '"'; }
-        .theme-theverge article .article-body-part blockquote .by {
+        .device-view .theme-theverge article .article-body-part blockquote .by {
           display: none; }
-          .theme-theverge article .article-body-part blockquote .by:before {
+          .device-view .theme-theverge article .article-body-part blockquote .by:before {
             content: '–'; }
-    .theme-theverge article .article-body figure figcaption {
+    .device-view .theme-theverge article .article-body figure figcaption {
       opacity: 0.6;
       font-size: 13px; }
-  .theme-theverge.device-tablet {
-    width: 768px; }
-    .theme-theverge.device-tablet header h1 {
-      font-size: 34px;
-      line-height: 42px;
-      margin-bottom: 30px; }
-    .theme-theverge.device-tablet article .article-body-part {
-      width: auto;
-      margin: 30px 68px 40px; }
-      .theme-theverge.device-tablet article .article-body-part p {
-        font-size: 17px; }
-      .theme-theverge.device-tablet article .article-body-part blockquote.quote_left {
-        margin: 15px 15px 15px -42px; }
-      .theme-theverge.device-tablet article .article-body-part blockquote.quote_right {
-        margin: 15px -42px 15px 15px; }
-  .theme-theverge.device-mobile {
-    width: 320px; }
-    .theme-theverge.device-mobile header h1 {
-      font-size: 34px;
-      line-height: 42px;
-      margin-bottom: 30px; }
-    .theme-theverge.device-mobile article .article-body-part {
-      width: auto;
-      margin: 30px 16px 30px; }
-      .theme-theverge.device-mobile article .article-body-part p {
-        font-size: 17px; }
-      .theme-theverge.device-mobile article .article-body-part blockquote {
-        width: 100%; }
-        .theme-theverge.device-mobile article .article-body-part blockquote.quote_left {
-          margin: 25px 0;
-          float: none; }
-        .theme-theverge.device-mobile article .article-body-part blockquote.quote_right {
-          margin: 25px 0;
-          float: none; }
+
+.device-view.device-tablet .theme-theverge {
+  width: 768px; }
+  .device-view.device-tablet .theme-theverge header h1 {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 30px; }
+  .device-view.device-tablet .theme-theverge article .article-body-part {
+    width: auto;
+    margin: 30px 68px 40px; }
+    .device-view.device-tablet .theme-theverge article .article-body-part p {
+      font-size: 17px; }
+    .device-view.device-tablet .theme-theverge article .article-body-part blockquote.quote_left {
+      margin: 15px 15px 15px -42px; }
+    .device-view.device-tablet .theme-theverge article .article-body-part blockquote.quote_right {
+      margin: 15px -42px 15px 15px; }
+
+.device-view.device-mobile .theme-theverge {
+  width: 320px; }
+  .device-view.device-mobile .theme-theverge header h1 {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 30px; }
+  .device-view.device-mobile .theme-theverge article .article-body-part {
+    width: auto;
+    margin: 30px 16px 30px; }
+    .device-view.device-mobile .theme-theverge article .article-body-part p {
+      font-size: 17px; }
+    .device-view.device-mobile .theme-theverge article .article-body-part blockquote {
+      width: 100%; }
+      .device-view.device-mobile .theme-theverge article .article-body-part blockquote.quote_left {
+        margin: 25px 0;
+        float: none; }
+      .device-view.device-mobile .theme-theverge article .article-body-part blockquote.quote_right {
+        margin: 25px 0;
+        float: none; }
 
 @media screen and (max-width: 1024px) {
   .theme-theverge {
