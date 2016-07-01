@@ -53,3 +53,11 @@ p {
 blockquote {
   margin: 0;
 }
+
+@media screen and (max-width: 1200px) {
+  .device-view {
+    &.device-desktop {
+      width: 100%;
+    }
+  }
+}
