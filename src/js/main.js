@@ -64,18 +64,6 @@ for(var i = 0; i < deviceRadios.length; i++) {
 }
 
 // utils
-function addEvent(elem, evType, fn) {
-  if (elem.addEventListener) {
-    elem.addEventListener(evType, fn, false);
-  }
-  else if (elem.attachEvent) {
-    elem.attachEvent('on' + evType, fn)
-  }
-  else {
-    elem['on' + evType] = fn
-  }
-}
-
 function addClass(el, c){
   var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
   if (re.test(el.className)) return;
