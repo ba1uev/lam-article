@@ -1,0 +1,82 @@
+@media screen and (max-width: 1024px) {
+  .theme-theverge {
+    width: 100%;
+    // header {
+    //   h1 {
+    //     padding: 0;
+    //   }
+    // }
+    article {
+      .article-body {
+        &-part {
+          width: auto;
+          margin: 30px 128px 45px;
+          blockquote {
+            &.quote_left {
+              margin: 15px 15px 15px -42px;
+            }
+            &.quote_right {
+              margin: 15px -42px 15px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .theme-theverge {
+    header {
+      h1 {
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 30px;
+      }
+    }
+    article {
+      .article-body {
+        &-part {
+          margin: 30px 68px 40px;
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .theme-theverge {
+    article {
+      .article-body {
+        &-part {
+          blockquote {
+            width: 100%;
+            &.quote_left {
+              margin: 25px 0;
+              float: none;
+            }
+            &.quote_right {
+              margin: 25px 0;
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .theme-theverge {
+    article {
+      .article-body {
+        &-part {
+          margin: 30px 16px 30px;
+        }
+      }
+    }
+  }
+}

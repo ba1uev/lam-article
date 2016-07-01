@@ -120,6 +120,57 @@
     .theme-wired article .article-body figure {
       width: 532px;
       margin: 64px 0 64px 50px; }
+  .theme-wired.device-mobile {
+    width: 320px; }
+    .theme-wired.device-mobile header {
+      margin: 0 16px 40px; }
+      .theme-wired.device-mobile header h1 {
+        font-size: 45px;
+        line-height: 38px;
+        margin-bottom: 30px; }
+    .theme-wired.device-mobile article {
+      margin: 0 16px; }
+      .theme-wired.device-mobile article .article-body-part {
+        width: 100%;
+        margin: 0; }
+        .theme-wired.device-mobile article .article-body-part p {
+          font-size: 16px; }
+        .theme-wired.device-mobile article .article-body-part blockquote {
+          margin-left: 0;
+          display: none; }
+      .theme-wired.device-mobile article .article-body figure {
+        width: 100%;
+        margin: 40px 0; }
+
+@media screen and (max-width: 768px) {
+  .theme-wired {
+    width: 100%; }
+    .theme-wired header {
+      margin: 0 16px 40px; }
+    .theme-wired article {
+      margin: 0 16px; }
+      .theme-wired article .article-body-part {
+        width: 100%;
+        margin: 0; }
+        .theme-wired article .article-body-part blockquote {
+          margin-left: 0; }
+      .theme-wired article .article-body figure {
+        width: 100%;
+        margin-left: 0; } }
+
+@media screen and (max-width: 630px) {
+  .theme-wired header h1 {
+    font-size: 45px;
+    line-height: 38px;
+    margin-bottom: 30px; }
+  .theme-wired article .article-body-part blockquote {
+    display: none; }
+  .theme-wired article .article-body figure {
+    margin: 40px 0; } }
+
+@media screen and (max-width: 630px) {
+  .theme-wired article .article-body-part p {
+    font-size: 16px; } }
 
 @font-face {
   font-family: "Open Sans";
@@ -233,6 +284,55 @@
             content: '–'; }
     .theme-techcrunch article .article-body figure {
       margin-bottom: 16px; }
+  .theme-techcrunch.device-mobile {
+    width: 320px; }
+    .theme-techcrunch.device-mobile header {
+      margin: 0 16px; }
+      .theme-techcrunch.device-mobile header h1 {
+        font-size: 21px;
+        line-height: 27px; }
+    .theme-techcrunch.device-mobile article {
+      margin: 0 16px; }
+      .theme-techcrunch.device-mobile article .article-body-part p.first {
+        font-size: 1.2em; }
+      .theme-techcrunch.device-mobile article .article-body-part blockquote {
+        width: auto;
+        float: none; }
+        .theme-techcrunch.device-mobile article .article-body-part blockquote.quote_left {
+          margin: 16px 0; }
+        .theme-techcrunch.device-mobile article .article-body-part blockquote.quote_right {
+          margin: 16px 0; }
+
+@media screen and (max-width: 700px) {
+  .theme-techcrunch {
+    width: 100%; }
+    .theme-techcrunch header {
+      margin: 0 16px; }
+      .theme-techcrunch header h1 {
+        font-size: 24px;
+        line-height: 28px; }
+    .theme-techcrunch article {
+      margin: 0 16px; }
+      .theme-techcrunch article .article-body-part p.first {
+        font-size: 1.2em; } }
+
+@media screen and (max-width: 600px) {
+  .theme-techcrunch article .article-body-part blockquote {
+    width: 250px; } }
+
+@media screen and (max-width: 500px) {
+  .theme-techcrunch article .article-body-part blockquote {
+    float: none;
+    width: auto; }
+    .theme-techcrunch article .article-body-part blockquote.quote_left {
+      margin: 16px 0; }
+    .theme-techcrunch article .article-body-part blockquote.quote_right {
+      margin: 16px 0; } }
+
+@media screen and (max-width: 400px) {
+  .theme-techcrunch header h1 {
+    font-size: 21px;
+    line-height: 27px; } }
 
 @font-face {
   font-family: "adelle";
@@ -289,7 +389,7 @@
     font-family: 'adelle';
     font-weight: 400;
     font-size: 49px;
-    padding-right: 60px;
+    padding-left: 16px;
     margin-bottom: 40px; }
   .theme-theverge header figure figcaption {
     display: none; }
@@ -343,12 +443,97 @@
     .theme-theverge article .article-body figure figcaption {
       opacity: 0.6;
       font-size: 13px; }
+  .theme-theverge.device-tablet {
+    width: 768px; }
+    .theme-theverge.device-tablet header h1 {
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 30px; }
+    .theme-theverge.device-tablet article .article-body-part {
+      width: auto;
+      margin: 30px 68px 40px; }
+      .theme-theverge.device-tablet article .article-body-part p {
+        font-size: 17px; }
+      .theme-theverge.device-tablet article .article-body-part blockquote.quote_left {
+        margin: 15px 15px 15px -42px; }
+      .theme-theverge.device-tablet article .article-body-part blockquote.quote_right {
+        margin: 15px -42px 15px 15px; }
+  .theme-theverge.device-mobile {
+    width: 320px; }
+    .theme-theverge.device-mobile header h1 {
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 30px; }
+    .theme-theverge.device-mobile article .article-body-part {
+      width: auto;
+      margin: 30px 16px 30px; }
+      .theme-theverge.device-mobile article .article-body-part p {
+        font-size: 17px; }
+      .theme-theverge.device-mobile article .article-body-part blockquote {
+        width: 100%; }
+        .theme-theverge.device-mobile article .article-body-part blockquote.quote_left {
+          margin: 25px 0;
+          float: none; }
+        .theme-theverge.device-mobile article .article-body-part blockquote.quote_right {
+          margin: 25px 0;
+          float: none; }
+
+@media screen and (max-width: 1024px) {
+  .theme-theverge {
+    width: 100%; }
+    .theme-theverge article .article-body-part {
+      width: auto;
+      margin: 30px 128px 45px; }
+      .theme-theverge article .article-body-part blockquote.quote_left {
+        margin: 15px 15px 15px -42px; }
+      .theme-theverge article .article-body-part blockquote.quote_right {
+        margin: 15px -42px 15px 15px; } }
+
+@media screen and (max-width: 800px) {
+  .theme-theverge header h1 {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 30px; }
+  .theme-theverge article .article-body-part {
+    margin: 30px 68px 40px; }
+    .theme-theverge article .article-body-part p {
+      font-size: 17px; } }
+
+@media screen and (max-width: 700px) {
+  .theme-theverge article .article-body-part blockquote {
+    width: 100%; }
+    .theme-theverge article .article-body-part blockquote.quote_left {
+      margin: 25px 0;
+      float: none; }
+    .theme-theverge article .article-body-part blockquote.quote_right {
+      margin: 25px 0;
+      float: none; } }
+
+@media screen and (max-width: 700px) {
+  .theme-theverge article .article-body-part {
+    margin: 30px 16px 30px; } }
+
+body {
+  margin: 0;
+  background: #f9f9f9; }
+
+.device-view {
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(131, 131, 131, 0.2);
+  padding: 40px 0;
+  margin: 140px auto; }
+  .device-view.device-desktop {
+    width: 1200px; }
+  .device-view.device-tablet {
+    width: 768px; }
+  .device-view.device-mobile {
+    width: 320px; }
 
 .content {
-  margin: 140px auto; }
+  margin: auto; }
 
 .controlls {
-  font-family: courier;
+  font-family: 'helvetica';
   width: 100%;
   height: 40px;
   position: fixed;

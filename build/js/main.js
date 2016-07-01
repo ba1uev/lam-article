@@ -3,38 +3,47 @@
 var CONTROLLS = document.forms[0];
 var THEMES = CONTROLLS.theme;
 var DEVICES = CONTROLLS.device;
+var DEVICE_VIEW = document.querySelector('.device-view');
 var CONTENT = document.querySelector('.content');
 
 var themesMap = {
   wired: {
     index: 0,
-    theme: 'theme-wired'
+    selector: 'theme-wired'
   },
   techcrunch: {
     index: 1,
-    theme: 'theme-techcrunch'
+    selector: 'theme-techcrunch'
   },
   theverge: {
     index: 2,
-    theme: 'theme-theverge'
+    selector: 'theme-theverge'
   }
 };
 
+var deviceMap = {
+  desktop: 'device-desktop',
+  tablet: 'device-tablet',
+  mobile: 'device-mobile'
+};
+
 var state = {
-  theme: 'wired',
+  theme: 'theverge',
   device: 'desktop'
 };
 
 //  INIT ----------------------------------
-console.log(THEMES.options[themesMap[state.theme].index]);
+
+addClass(DEVICE_VIEW, deviceMap[state.device]);
 THEMES.options[themesMap[state.theme].index].selected = true;
-addClass(CONTENT, themesMap[state.theme].theme);
+addClass(CONTENT, themesMap[state.theme].selector);
+
 // ----------------------------------------
 
 THEMES.onchange = function () {
-  removeClass(CONTENT, themesMap[state.theme].theme);
+  removeClass(CONTENT, themesMap[state.theme].selector);
   state.theme = this.value;
-  addClass(CONTENT, themesMap[state.theme].theme);
+  addClass(CONTENT, themesMap[state.theme].selector);
 };
 
 var prev = null;
@@ -43,7 +52,9 @@ for (var i = 0; i < DEVICES.length; i++) {
     if (this !== prev) {
       prev = this;
     }
-    console.log('Device: ', this.value);
+    removeClass(DEVICE_VIEW, deviceMap[state.device]);
+    state.device = this.value;
+    addClass(DEVICE_VIEW, deviceMap[state.device]);
   };
 }
 

@@ -1,0 +1,68 @@
+@media screen and (max-width: 700px) {
+  .theme-techcrunch {
+    width: 100%;
+    header {
+      margin: 0 16px;
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    article {
+      margin: 0 16px;
+      .article-body {
+        &-part {
+          p.first {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .theme-techcrunch {
+    article {
+      .article-body {
+        &-part {
+          blockquote {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .theme-techcrunch {
+    article {
+      .article-body {
+        &-part {
+          blockquote {
+            float: none;
+            width: auto;
+            &.quote_left {
+              margin: 16px 0;
+            }
+            &.quote_right {
+              margin: 16px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .theme-techcrunch {
+    header {
+      h1 {
+        font-size: 21px;
+        line-height: 27px;
+      }
+    }
+  }
+}
